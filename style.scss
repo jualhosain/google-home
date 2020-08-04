@@ -1,0 +1,175 @@
+$btn: #f5f5f5;
+$bottom: #f2f2f2;
+$primary: darken($bottom, 50% );
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    color: $primary;
+    .top{
+        height: 8%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        .topRight{
+            margin-right: 1.5rem;
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                padding: .5rem .8rem;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+            p{
+                padding: .5rem .8rem;
+                &:hover{
+                    color: lighten(#000,2%);
+                    cursor: pointer;
+                }
+            }
+
+            .topImg{
+                width: 2rem;
+                height: 2rem;
+                margin-left: .5rem;
+                cursor: pointer;
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    .mainContent{
+        height: 55%;
+        width: 50%;
+         margin: auto;
+        overflow: hidden;
+        text-align: center;
+        .input{
+            margin-top:1.5rem;
+            position: relative;
+            input{
+                width: 96%;
+                padding: .8rem 3rem;
+                border-radius: 2rem;
+                border:1px solid darken($bottom, 12%);
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    box-shadow: 0 0 0.4rem .02rem rgb(209, 209, 209);
+                }
+
+            }
+            .search{
+                color: darken($bottom, 20%);
+                position: absolute;
+                top:.9rem;
+                left:1.9rem;
+                z-index: 1;
+                font-size: .9rem;
+            }
+            .microPhone{
+                width: 1.5rem;
+                position: absolute;
+                top:.5rem;
+                right:1.9rem;
+
+            }
+        }
+        .extraBtn{
+            margin: 1.8rem 0;
+            height: 6%;
+            display: flex;
+            justify-content: center;
+            .btnone{
+                width: 150px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                margin-right: .8rem;
+                button{
+                    background: $btn;
+                    padding: .6rem 1rem;
+                    border-radius: .4rem;
+                    border:none;
+                    width: 150px;
+                    color:$primary;
+                    &:hover{
+                        color: lighten(#000, 2%);
+                        border : 1px solid darken($bottom, 15%);
+                    }
+                }
+            }
+            .btntwo{
+                width: 200px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                button{
+                    background: $btn;
+                    padding: .6rem 1rem;
+                    border-radius: .4rem;
+                    border:none;
+                    width: 150px;
+                    color:$primary;
+                    &:hover{
+                        color: lighten(#000, 2%);
+                        border : 1px solid darken($bottom, 15%);
+                    }
+                }
+            }
+        }
+        .lang{
+            display: flex;
+            justify-content: center;
+            color: lighten(#000, 2%);
+            a{
+                font-size: .9rem;
+                margin-left: .6rem;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+    .bottom{
+        height: 10%;
+        overflow: hidden;
+        width: 100%;
+        background:$bottom;
+        .country{
+            border-top: 1px solid darken($bottom, 10% );
+            p{
+                padding: .8rem 1.3rem;
+            }
+        }
+        .bottomExtra{
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid darken($bottom, 10% );
+            padding: .8rem 1.3rem;
+            a{
+                text-decoration: none;
+                color: darken($bottom, 50% );
+                margin: 0 1rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
